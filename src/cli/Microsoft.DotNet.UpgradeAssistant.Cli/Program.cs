@@ -32,6 +32,7 @@ namespace Microsoft.DotNet.UpgradeAssistant.Cli
             // Top-level commands (upgrade, analyze, etc.) are registered as commands and parse with System.CommandLine
             root.AddCommand(new ConsoleAnalyzeCommand());
             root.AddCommand(new ConsoleUpgradeCommand());
+            root.AddCommand(new ConsoleUpgradeSingleStepCommand());
             root.AddCommand(new ExtensionManagementCommand());
             root.AddCommand(new FeatureFlagCommand());
 
